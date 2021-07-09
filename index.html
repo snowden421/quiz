@@ -9,7 +9,25 @@
 </head>
 
 <body>
-    
+    <header>
+        <a href="highscore.html">View High Score</a>
+        <p>Time: <span id="timer">0</span></p>
+    </header>
+    <main id="start-menu">
+        <h2>Javascript Quiz</h2>
+        <p>This is a simple quiz that will save your high score!</p>
+        <button id="start">Start</button>
+    </main>
+    <main id="quiz-menu" class="hide">
+        <h1 id="question">somehitng</h1>
+        <div id="answers"></div>
+    </main>
+    <main id="score-menu" class="hide">
+        <h4>Your score is: <span id="final-score"></span></h4>
+        <p>please enter your initials</p>
+        <input id="initials" type="text">
+        <button id="submit-score">Submit</button>
+    </main>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
