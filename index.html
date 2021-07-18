@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  </head>
 
-<body>
-    <header>
+  <body>
+    <div class="container">
+      <header>
         <a href="highscore.html">View High Score</a>
         <p>Time: <span id="timer">0</span></p>
-    </header>
-    <main id="start-menu">
+      </header>
+      <main id="start-menu">
         <h2>Javascript Quiz</h2>
         <p>This is a simple quiz that will save your high score!</p>
         <button id="start">Start</button>
-    </main>
-    <main id="quiz-menu" class="hide">
+      </main>
+      <main id="quiz-menu" class="hide">
         <h1 id="question">quiz questions will go here</h1>
-        <div id="choices"></div>
-    </main>
-    <main id="score-menu" class="hide">
-        <h4>Your score is: <span id="final-score"></span></h4>
-        <p>please enter your initials</p>
-        <input id="initials" type="text">
+        <div id="choices">
+            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+            <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+            <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </div>
+        <div id="validation"></div>
+      </main>
+      <main id="score-menu" class="hide">
+        <h4>Your Score is: <span id="final-score"></span></h4>
+        <p>Please Enter Your Initials</p>
+        <input id="initials" type="text" />
         <button id="submit-score">Submit</button>
-    </main>
+      </main>
+    </div>
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>

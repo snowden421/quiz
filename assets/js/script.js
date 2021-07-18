@@ -8,7 +8,12 @@ var scoreEl = document.querySelector("#score-menu");
 // Variables
 var time = 10;
 var timeInterval;
-var questionNumber = 0
+var questionNumber = 0;
+var choiceA = document.getElementById("A");
+var choiceB = document.getElementById("B");
+var choiceC = document.getElementById("C");
+var choiceD = document.getElementById("D");
+
 
 
 // This function starts the quiz
