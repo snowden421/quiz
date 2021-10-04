@@ -1,3 +1,85 @@
 .hide{
     display: none;
 }
+
+h1{
+    text-align: center;
+    color: rgb(8, 94, 175);
+    margin: 15px 30px 15px 25px;
+  }
+  
+  #timer {
+    float: right;
+    font-weight: bold;
+   
+  }
+  
+   #showHighScore {
+    float: left;
+    font-weight: bold;
+  }  
+  
+   #container{
+    margin : 20px auto;
+    background-color: white;
+    height: 350px;
+    width : 700px;
+    padding: 14px 34px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+  } 
+  
+   #start{
+    border: none;
+    background-color: rgb(8, 94, 175);
+    border-radius: 25px;
+    color:white;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer; 
+  }  
+  #A,#B, #C, #D {
+    border: none;
+    background-color: rgb(8, 94, 175);
+    border-radius: 15px;
+    color:white;
+    display: list-item;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 10px 10px 10px 15px;
+    padding: 10px 10px;
+    text-align: center;
+    cursor: pointer; 
+  }
+  
+  /* Use  media query  */
+   @media (max-width: 980px) {
+    #container {
+      font-size: 18px;
+      margin: 16px 15px 15px 15px;
+      padding: 10px 15px;
+    }
+  }
+  
+   @media (max-width: 850px) {
+    #container {
+      font-size: 18px;
+      margin: 10px 10px 10px 10px;
+      padding: 10px 10px;
+      width:fit-content
+    }
+  }
+  
+  
+    @media (max-width: 600px) {
+    #container {
+      font-size: 18px;
+      margin: 16px 15px 15px 15px;
+      padding: 10px 15px;
+    }
+   }
